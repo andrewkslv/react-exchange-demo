@@ -1,0 +1,80 @@
+@import "./themes/gradient/uikit.less";
+@import "./panel.less";
+
+@modal-dialog-large-width:                      800px;
+@modal-dialog-large-width-large:                800px;
+@footer-height-small:                           60px;
+@footer-height-medium:                          80px;
+
+
+.hook-cover-misc() {
+  .ex-OfferPageImg-img {
+    min-width: 100%;
+  }
+  .ex-SiteLogo-img {
+    width: 200px;
+  }
+  .ex-Offer-logo {
+    height: 70px;
+  }
+}
+
+.hook-utility-misc() {
+  .ex-OfferAgreement-text p:first-child {
+      margin: 0;
+    }
+  .ex-OfferAgreement-text p {
+      margin: 5px 0 0 0;
+    }
+}
+
+
+.hook-base-misc() {
+  .ex-Wrapper {
+    min-height: 100vh;
+    background: url("http://assets.flocktory.com/assets/wood-bg.jpg") repeat top;
+    -webkit-background-size: 600px auto;
+    background-size: 600px auto;
+  }
+  .ex-footer {
+    position: relative;
+    box-sizing: border-box;
+    padding-top: (@footer-height-small - 20px)/2;
+    padding-bottom: (@footer-height-small - 20px)/2;
+    background-color: rgba(0,0,0,0.4);
+    color: #fff;
+  }
+  .hook-base-body() {
+    height: 100vh;
+  }
+  .body {
+    height: 100vh;
+  }
+  .sticky-wrapper {
+    min-height: 100vh;
+    margin: 0 auto -@footer-height-small;
+  }
+  .sticky-push {
+    height: @footer-height-small;
+  }
+
+  @media (min-width: @breakpoint-medium) {
+    .ex-footer {
+      padding-top: (@footer-height-medium - 20px)/2;
+      padding-bottom: (@footer-height-medium - 20px)/2;
+    }
+    .sticky-wrapper {
+      margin: 0 auto -@footer-height-medium;
+    }
+    .sticky-push {
+      height: @footer-height-medium;
+    }
+  }
+}
+
+
+.hook-text-misc() {
+  .ex-text-white {
+    color: #ffffff !important;
+  }
+}
