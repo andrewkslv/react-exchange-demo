@@ -10,7 +10,7 @@ export default class Footer extends React.Component {
             },
             repository: {
                 name: 'Repository',
-                url: ''
+                url: 'https://github.com/EclipticWld/react-exchange-demo'
             }
         }
     }
