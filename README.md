@@ -17,7 +17,7 @@ First of all, install [Node](http://nodejs.org/).
 Then install Node dependency.
 
 ```
-$ cd flocktory-exchange
+$ cd react-exchange-demo
 $ npm install 
 ```
 
@@ -26,7 +26,7 @@ $ npm install
 If you want development mode you need 
 
 ```
-$ cd flocktory-exchange
+$ cd react-exchange-demo
 $ npm start
 ```
 
@@ -37,7 +37,7 @@ And open new browser tab, pointing to [http://localhost:8080/](http://localhost:
 Production version of the project you could get by 
 
 ```
-$ cd flocktory-exchange
+$ cd react-exchange-demo
 $ npm run build
 ```
 
